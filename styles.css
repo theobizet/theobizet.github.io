@@ -26,3 +26,7 @@ section.active {
 .list-group-item {
     border: none;
 }
+
+a .hover{
+    cursor: auto;
+}
