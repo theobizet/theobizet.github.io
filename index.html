@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-white">
+    <header class="py-3 fixed-top bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3" onclick="showSection('home')" style="cursor: pointer;">Théo Bizet - Développeur</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about-me" onclick="showSection('about-me')">À propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#education" onclick="showSection('education')">Éducation</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects" onclick="showSection('projects')">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#experiences" onclick="showSection('experiences')">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="mask">
-        <header class="py-3 fixed-top bg-dark">
-            <div class="container d-flex justify-content-between align-items-center">
-                <h1 class="h3" onclick="showSection('home')" style="cursor: pointer;">Théo Bizet - Développeur</h1>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-white" href="#about-me" onclick="showSection('about-me')">À propos de moi</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#education" onclick="showSection('education')">Éducation</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#projects" onclick="showSection('projects')">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#experiences" onclick="showSection('experiences')">Expériences</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#contact" onclick="showSection('contact')">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
         <main class="container my-5 py-5">
             <section id="home" class="active">
                 <h2 class="border-bottom pb-2">Bienvenue</h2>
