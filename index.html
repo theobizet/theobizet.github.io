@@ -51,6 +51,12 @@
         footer {
             margin-top: auto; 
         }
+
+        .card-footer{
+            background-size: cover; 
+            background-position: center;
+            height: 150px;
+        }
     </style>
 </head>
 <body class="text-white">
@@ -59,7 +65,7 @@
         <header class="bg-dark py-3">
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <div class="h3 text-truncate "><a class="text-white" onclick="showSection('home')" style="cursor: pointer;" href="#">Théo Bizet - Développeur</a></div>
+                    <div class="h1 text-truncate "><a class="nav-link text-white" onclick="showSection('home')" style="cursor: pointer;" href="#">Théo Bizet - Développeur</a></div>
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -82,12 +88,16 @@
         <main class="container-fluid flex-grow-1">
             <section id="home" class="active">
                 <h2 class="border-bottom pb-2">Bienvenue</h2>
-                <p>Bienvenue sur mon site CV. Vous trouverez ici des informations sur mon parcours, mes projets, mes expériences professionnelles, ainsi que mes compétences. Cliquez sur les sections en haut pour explorer plus en détail.</p>
+                <p>
+                    Bienvenue sur mon site CV ! Ce site a été conçu pour vous donner un aperçu complet de mon parcours, de mes compétences et de ce qui me motive. Vous y découvrirez des informations détaillées sur mon parcours académique, mes projets personnels et professionnels, ainsi que les expériences qui ont façonné mon savoir-faire et ma vision. Chaque section est là pour vous aider à mieux comprendre mes compétences, mes centres d'intérêt et les défis que j'aime relever. N'hésitez pas à explorer les différentes rubriques en cliquant sur les onglets en haut de la page pour en savoir plus !
+                </p>
             </section>
 
             <section id="about-me" class="">
                 <h2 class="border-bottom pb-2">À propos de moi</h2>
-                <p>Je suis étudiant en 3e année de licence d'informatique. Je possède le permis B et le permis AM. J'aime la musique (9 ans d'apprentissage de la guitare), l'histoire, la culture générale, la conception assistée par ordinateur (CAO), le développement frontend de logiciels et la programmation web.</p>
+                <p>
+                    Je suis en troisième année de licence d'informatique, avec une passion pour tout ce qui touche aux technologies numériques et à la création de solutions modernes. J'ai le permis B et le permis AM, ce qui me donne pas mal de liberté pour bouger. À côté des études, je suis curieux et touche-à-tout : ça fait 9 ans que je joue de la guitare, ce qui m'a vraiment aidé à bosser ma créativité et ma persévérance. J'adore aussi l'histoire et la culture générale, des sujets qui me poussent à toujours vouloir apprendre de nouvelles choses.<br>Je m'intéresse à la CAO (conception assistée par ordinateur), un mélange sympa entre technique et imagination, et au développement frontend, où je trouve cool de combiner esthétique et utilité. Mon but ultime, c'est de devenir développeur full-stack et de vraiment maîtriser tous les aspects du métier.
+                </p>
             </section>
 
             <section id="education" class="">
@@ -124,6 +134,9 @@
                                 <h5 class="card-title">Création d'un robot résolvant des labyrinthes</h5>
                                 <p class="card-text">Rôle : Chef de projet</p>
                             </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('labyrinthe.jpg');">
+                            </div>
                         </div>                                            
                     </div>
                     <div class="col">
@@ -134,6 +147,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mise en place du logiciel EFA cloud pour Mulhouse-Aviron</h5>
                             </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('aviron.jpg');">
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -143,6 +159,9 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Présentation de MobileNet-SSD (Intelligence artificielle)</h5>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('mobilenetSSD.jpg');">
                             </div>
                         </div>
                     </div>
@@ -155,6 +174,9 @@
                                 <h5 class="card-title">Gestionnaire de rendez-vous avec C++ et QT</h5>
                                 <p class="card-text">Rôle : Développeur</p>
                             </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('gestionRDV.png');">
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -163,8 +185,11 @@
                                 2021-2022
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Base de données avec Microsoft Access</h5>
+                                <h5 class="card-title">Base de données avec Microsoft Access : Gestion des vacataires de l'UHA</h5>
                                 <p class="card-text">Rôle : Chef de projet</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('BDDrelationnelle.jpeg');">
                             </div>
                         </div>
                     </div>
@@ -177,6 +202,9 @@
                                 <h5 class="card-title">Module pour motoriser un skateboard</h5>
                                 <p class="card-text">Rôle : Développeur</p>
                             </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('skate.jpg');">
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -187,6 +215,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Jeu vidéo « Pong » en Python</h5>
                                 <p class="card-text">Rôle : Développeur</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('pong.png');">
                             </div>
                         </div>
                     </div>
@@ -265,7 +296,7 @@
         <!-- Footer -->
         <footer class="bg-dark text-center py-3">
             <p>Théo Bizet - 2025</p>
-            <p class="text-secondary">Hosted by GitHub<i class="fab fa-github"></i></p>
+            <p class="text-secondary">Hosted by <a class="text-secondary" href="https://github.com">GitHub<i class="fab fa-github"></i></a></p>
         </footer>
     </div>
 
