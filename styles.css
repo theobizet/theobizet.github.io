@@ -28,9 +28,7 @@ header, footer {
 }
 
 main {
-    padding-top: 120px; /* Prevent overlap with header */
-    padding-bottom: 80px; /* Prevent overlap with footer */
-    flex-grow: 1;
+    display: flex;
 }
 
 section {
