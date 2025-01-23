@@ -11,29 +11,29 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%; /* Assure que le body couvre toute la hauteur de l'écran */
-            overflow: hidden; /* Empêche le défilement si nécessaire */
+            height: 100%; 
         }
         
         body {
             background: url('bg-img.jpeg') no-repeat center center fixed;
             background-size: cover;
-            color: white; /* Garde le texte lisible */
-            position: relative; /* Nécessaire pour positionner le pseudo-élément */
+            color: white;
+            position: relative;
         }
-        
-        body::before {
+
+        .content-wrapper{
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Noir avec 50% d'opacité */
-            z-index: -1; /* Place la superposition derrière le contenu */
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(12px);
         }
         
-
         section {
             display: none;
         }
@@ -49,111 +49,218 @@
         }
 
         footer {
-            flex-shrink: 0;
+            margin-top: auto; 
         }
     </style>
 </head>
 <body class="text-white">
-    <!-- Header -->
-    <header class="bg-dark py-3">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <div class="h3 text-truncate" onclick="showSection('home')" style="cursor: pointer;">Théo Bizet - Développeur</div>
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link text-white" onclick="showSection('about-me')">À propos de moi</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" onclick="showSection('education')">Éducation</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" onclick="showSection('projects')">Projets</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" onclick="showSection('experiences')">Expériences</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" onclick="showSection('contact')">Contact</a></li>
-                        </ul>
+    <div class="content-wrapper">
+        <!-- Header -->
+        <header class="bg-dark py-3">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="h3 text-truncate" onclick="showSection('home')" style="cursor: pointer;">Théo Bizet - Développeur</div>
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link text-white" onclick="showSection('about-me')">À propos de moi</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" onclick="showSection('education')">Éducation</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" onclick="showSection('projects')">Projets</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" onclick="showSection('experiences')">Expériences</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" onclick="showSection('contact')">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container-fluid flex-grow-1">
+            <section id="home" class="active">
+                <h2 class="border-bottom pb-2">Bienvenue</h2>
+                <p>Bienvenue sur mon site CV. Vous trouverez ici des informations sur mon parcours, mes projets, mes expériences professionnelles, ainsi que mes compétences. Cliquez sur les sections en haut pour explorer plus en détail.</p>
+            </section>
+
+            <section id="about-me" class="">
+                <h2 class="border-bottom pb-2">À propos de moi</h2>
+                <p>Je suis étudiant en 3e année de licence d'informatique. Je possède le permis B et le permis AM. J'aime la musique (9 ans d'apprentissage de la guitare), l'histoire, la culture générale, la conception assistée par ordinateur (CAO), le développement frontend de logiciels et la programmation web.</p>
+            </section>
+
+            <section id="education" class="">
+                <h2 class="border-bottom pb-2">Éducation</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="h5">Université de Haute Alsace - Mulhouse</div>
+                        <p class="text-secondary">2019 - aujourd'hui : LICENCE INFORMATIQUE</p>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container-fluid">
-        <section id="home" class="active">
-            <h2 class="border-bottom pb-2">Bienvenue</h2>
-            <p>Bienvenue sur mon site CV. Vous trouverez ici des informations sur mon parcours, mes projets, mes expériences professionnelles, ainsi que mes compétences. Cliquez sur les sections en haut pour explorer plus en détail.</p>
-        </section>
-
-        <section id="about-me" class="">
-            <h2 class="border-bottom pb-2">À propos de moi</h2>
-            <p>Je suis étudiant en 3e année de licence d'informatique. Je possède le permis B et le permis AM. J'aime la musique (9 ans d'apprentissage de la guitare), l'histoire, la culture générale, la conception assistée par ordinateur (CAO), le développement frontend de logiciels et la programmation web.</p>
-        </section>
-
-        <section id="education" class="">
-            <h2 class="border-bottom pb-2">Éducation</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="h5">Université de Haute Alsace - Mulhouse</div>
-                    <p class="text-secondary">2019 - aujourd'hui : LICENCE INFORMATIQUE</p>
+                    <div class="col-md-6">
+                        <div class="h5">Lycée Général Don Bosco - Landser</div>
+                        <p class="text-secondary">2016 - 2019 : BACCALAURÉAT SCIENCE DE L'INGÉNIEUR</p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="h5">Lycée Général Don Bosco - Landser</div>
-                    <p class="text-secondary">2016 - 2019 : BACCALAURÉAT SCIENCE DE L'INGÉNIEUR</p>
+            </section>
+
+            <section id="projects" class="">
+                <h2 class="border-bottom pb-2">Projets</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header bg-secondary text-white">
+                                2024-2025
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Création d'un robot résolvant des labyrinthes</h5>
+                                <p class="card-text">Rôle : Chef de projet</p>
+                            </div>
+                        </div>                                            
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header bg-secondary text-white">
+                                2023-2024
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mise en place du logiciel EFA cloud pour Mulhouse-Aviron</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header bg-secondary text-white">
+                                2023-2024
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Présentation de MobileNet-SSD (Intelligence artificielle)</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header bg-secondary text-white">
+                                2022-2023
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Gestionnaire de rendez-vous avec C++ et QT</h5>
+                                <p class="card-text">Rôle : Développeur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header bg-secondary text-white">
+                                2021-2022
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Base de données avec Microsoft Access</h5>
+                                <p class="card-text">Rôle : Chef de projet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header bg-secondary text-white">
+                                2018-2019
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Module pour motoriser un skateboard</h5>
+                                <p class="card-text">Rôle : Développeur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-light">
+                            <div class="card-header bg-secondary text-white">
+                                2016-2017
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jeu vidéo « Pong » en Python</h5>
+                                <p class="card-text">Rôle : Développeur</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="projects" class="">
-            <h2 class="border-bottom pb-2">Projets</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-3">
-                <div class="col"><div class="bg-dark p-3">2024-2025 : Création d'un robot résolvant des labyrinthes (Rôle : Chef de projet)</div></div>
-                <div class="col"><div class="bg-dark p-3">2023-2024 : Mise en place du logiciel EFA cloud pour Mulhouse-Aviron</div></div>
-                <div class="col"><div class="bg-dark p-3">2023-2024 : Présentation de MobileNet-SSD (Intelligence artificielle)</div></div>
-                <div class="col"><div class="bg-dark p-3">2022-2023 : Gestionnaire de rendez-vous avec C++ et QT (Rôle : Développeur)</div></div>
-                <div class="col"><div class="bg-dark p-3">2024-2025 : Création d'un robot résolvant des labyrinthes (Rôle : Chef de projet)</div></div>
-                <div class="col"><div class="bg-dark p-3">2023-2024 : Mise en place du logiciel EFA cloud pour Mulhouse-Aviron</div></div>
-                <div class="col"><div class="bg-dark p-3">2023-2024 : Présentation de MobileNet-SSD (Intelligence artificielle)</div></div>
-                <div class="col"><div class="bg-dark p-3">2022-2023 : Gestionnaire de rendez-vous avec C++ et QT (Rôle : Développeur)</div></div>
-                <div class="col"><div class="bg-dark p-3">2021-2022 : Base de données avec Microsoft Access (Rôle : Chef de projet)</div></div>
-                <div class="col"><div class="bg-dark p-3">2018-2019 : Module pour motoriser un skateboard</div></div>
-                <div class="col"><div class="bg-dark p-3">2016-2017 : Jeu vidéo « Pong » en Python</div></div>
-            </div>
-        </section>
+            <section id="experiences" class="">
+                <h2 class="border-bottom pb-2">Expériences</h2>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Stage de fin de licence - ISL, Saint-Louis</div>
+                            13/05/2024 - 28/08/2024
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Préparateur de commandes - CERP RRM, Illzach</div>
+                            27/06/2023 - aujourd'hui
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Transfert de base de données - GRG Alsace, Strasbourg</div>
+                            27/06/2022 - 09/09/2022
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Préparateur de commandes - Bell Suisse SA, Bâle</div>
+                            28/10/2020 - 30/01/2021
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Manutentionnaire - GRG Alsace, Strasbourg</div>
+                            Étés 2017, 2018, 2019, 2021
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Vendeur - Supermarché Match, Huningue</div>
+                            31/08/2020 - 13/09/2021
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Stage d'observation : Service Informatique - Journal l'Alsace, Mulhouse</div>
+                            Janvier 2016
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Ouvrier agricole - EARL Fix, Fessenheim-le-Bas</div>
+                            Été 2015
+                        </div>
+                    </li>
+                </ul>
+            </section>              
 
-        <section id="experiences" class="">
-            <h2 class="border-bottom pb-2">Expériences</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent text-white">13/05/2024 - 28/08/2024 : Stage de fin de licence - ISL, Saint-Louis</li>
-                <li class="list-group-item bg-transparent text-white">27/06/2023 - aujourd'hui : Préparateur de commandes - CERP RRM, Illzach</li>
-                <li class="list-group-item bg-transparent text-white">27/06/2022 - 09/09/2022 : Transfert de base de données - GRG Alsace, Strasbourg</li>
-                <li class="list-group-item bg-transparent text-white">28/10/2020 - 30/01/2021 : Préparateur de commandes - Bell Suisse SA, Bâle</li>
-                <li class="list-group-item bg-transparent text-white">Manutentionnaire - GRG Alsace, Strasbourg (Étés 2017, 2018, 2019, 2021)</li>
-                <li class="list-group-item bg-transparent text-white">31/08/2020 - 13/09/2021 : Vendeur - Supermarché Match, Huningue</li>
-                <li class="list-group-item bg-transparent text-white">Stage d'observation : Service Informatique - Journal l'Alsace, Mulhouse</li>
-                <li class="list-group-item bg-transparent text-white">Ouvrier agricole - EARL Fix, Fessenheim-le-Bas</li>
-            </ul>
-        </section>
+            <section id="contact" class="">
+                <h2 class="border-bottom pb-2">Contact</h2>
+                <p>Email : <a href="mailto:theobizet@outlook.fr" class="text-white">theobizet@outlook.fr</a></p>
+                <p>Téléphone : <a href="tel:0603704701" class="text-white">06 03 70 47 01</a></p>
+                <p>Adresse : RANTZWILLER</p>
+                <div class="d-flex align-items-center">
+                    <!-- Icône LinkedIn -->
+                    <i class="fab fa-linkedin text-primary me-2" style="font-size: 2rem;"></i>
+                    <!-- Lien vers le profil -->
+                    <a href="https://www.linkedin.com/in/théo-bizet" target="_blank" class="btn btn-primary btn-sm">
+                    Mon Profil LinkedIn
+                    </a>
+                </div>
+            </section>
+        </main>
 
-        <section id="contact" class="">
-            <h2 class="border-bottom pb-2">Contact</h2>
-            <p>Email : <a href="mailto:theobizet@outlook.fr" class="text-white">theobizet@outlook.fr</a></p>
-            <p>Téléphone : <a href="tel:0603704701" class="text-white">06 03 70 47 01</a></p>
-            <p>Adresse : RANTZWILLER</p>
-            <div class="d-flex align-items-center">
-                <!-- Icône LinkedIn -->
-                <i class="fab fa-linkedin text-primary me-2" style="font-size: 2rem;"></i>
-                <!-- Lien vers le profil -->
-                <a href="https://www.linkedin.com/in/théo-bizet" target="_blank" class="btn btn-primary btn-sm">
-                  Mon Profil LinkedIn
-                </a>
-              </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="fixed-bottom bg-dark text-center py-3">
-        <p>Théo Bizet - 2025</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="bg-dark text-center py-3">
+            <p>Théo Bizet - 2025</p>
+            <p class="text-secondary">Hosted by GitHub<i class="fab fa-github"></i></p>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
