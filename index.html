@@ -5,12 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Théo Bizet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Image de fond */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Assure que le body couvre toute la hauteur de l'écran */
+            overflow: hidden; /* Empêche le défilement si nécessaire */
+        }
+        
+        body {
+            background: url('bg-img.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white; /* Garde le texte lisible */
+            position: relative; /* Nécessaire pour positionner le pseudo-élément */
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Noir avec 50% d'opacité */
+            z-index: -1; /* Place la superposition derrière le contenu */
+        }
+        
+
+        section {
+            display: none;
+        }
+        
+        section.active {
+            display: block;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        header {
+            flex-shrink: 0;
+        }
+
+        footer {
+            flex-shrink: 0;
+        }
+    </style>
 </head>
-<body class="text-white bg-dark">
+<body class="text-white">
     <!-- Header -->
-    <header class="py-3 bg-dark">
+    <header class="bg-dark py-3">
         <div class="container-fluid">
-            <div class="d-flex justify-content-between align-items-right flex-wrap">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <div class="h3 text-truncate" onclick="showSection('home')" style="cursor: pointer;">Théo Bizet - Développeur</div>
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,18 +77,18 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container my-5 py-5">
+    <main class="container-fluid">
         <section id="home" class="active">
             <h2 class="border-bottom pb-2">Bienvenue</h2>
             <p>Bienvenue sur mon site CV. Vous trouverez ici des informations sur mon parcours, mes projets, mes expériences professionnelles, ainsi que mes compétences. Cliquez sur les sections en haut pour explorer plus en détail.</p>
         </section>
 
-        <section id="about-me" class="mt-4">
+        <section id="about-me" class="">
             <h2 class="border-bottom pb-2">À propos de moi</h2>
             <p>Je suis étudiant en 3e année de licence d'informatique. Je possède le permis B et le permis AM. J'aime la musique (9 ans d'apprentissage de la guitare), l'histoire, la culture générale, la conception assistée par ordinateur (CAO), le développement frontend de logiciels et la programmation web.</p>
         </section>
 
-        <section id="education" class="mt-4">
+        <section id="education" class="">
             <h2 class="border-bottom pb-2">Éducation</h2>
             <div class="row">
                 <div class="col-md-6">
@@ -56,7 +102,7 @@
             </div>
         </section>
 
-        <section id="projects" class="mt-4">
+        <section id="projects" class="">
             <h2 class="border-bottom pb-2">Projets</h2>
             <div class="row row-cols-1 row-cols-md-2 g-3">
                 <div class="col"><div class="bg-dark p-3">2024-2025 : Création d'un robot résolvant des labyrinthes (Rôle : Chef de projet)</div></div>
@@ -73,7 +119,7 @@
             </div>
         </section>
 
-        <section id="experiences" class="mt-4">
+        <section id="experiences" class="">
             <h2 class="border-bottom pb-2">Expériences</h2>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item bg-transparent text-white">13/05/2024 - 28/08/2024 : Stage de fin de licence - ISL, Saint-Louis</li>
@@ -87,7 +133,7 @@
             </ul>
         </section>
 
-        <section id="contact" class="mt-4">
+        <section id="contact" class="">
             <h2 class="border-bottom pb-2">Contact</h2>
             <p>Email : <a href="mailto:theobizet@outlook.fr" class="text-white">theobizet@outlook.fr</a></p>
             <p>Téléphone : <a href="tel:0603704701" class="text-white">06 03 70 47 01</a></p>
@@ -96,11 +142,21 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-center py-3">
+    <footer class="fixed-bottom bg-dark text-center py-3">
         <p>Théo Bizet - 2025</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+        
+        // Show the home section by default
+        showSection('home');
+    </script>
 </body>
 </html>
