@@ -1,5 +1,10 @@
 /* Responsive layout and styles */
 
+html {
+    min-width: 550px;
+    position: relative;
+}
+
 body {
     background-image: url('bg-img.jpeg');
     background-size: cover;
