@@ -37,25 +37,12 @@
         }
         
         /* affichage des sections */
-        section {
-            display: none;
-        }
-        
-        section.active {
-            display: block;
+        .tab-pane {
             flex-direction: column;
             padding: 20px;
-        }     
-
-        /* calibrage */
-        header {
-            flex-shrink: 0;
         }
 
-        footer {
-            margin-top: auto; 
-        }
-
+        /* présentoires */
         .card-footer{
             background-size: cover; 
             background-position: center;
@@ -105,31 +92,31 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <!-- Logo / Titre -->
-                    <a class="navbar-brand text-white" onclick="showSection('home')" href="#">Théo Bizet - Développeur</a>
+                    <span class="navbar-brand mb-0 h1">Théo BIZET - Développeur</span>
                     <!-- Bouton hamburger pour mobile -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!-- Menu déroulant qui se cache sur les petits écrans -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto"> <!-- `ms-auto` pour aligner le menu à droite -->
+                        <ul class="navbar-nav mb-3 ms-auto" id="tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link text-white" onclick="showSection('home')" href="#">Accueil</a>
+                                <a class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" onclick="showSection('about-me')" href="#about-me">À propos de moi</a>
+                                <a class="nav-link" id="about-me-tab" data-bs-toggle="pill" data-bs-target="#about-me" role="tab" aria-controls="about-me" aria-selected="true">À propos de moi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" onclick="showSection('education')" href="#education">Éducation</a>
+                                <a class="nav-link" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" role="tab" aria-controls="education" aria-selected="true">Éducation</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" onclick="showSection('projects')" href="#projects">Projets</a>
+                                <a class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" role="tab" aria-controls="projects" aria-selected="true">Projets</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" onclick="showSection('experiences')" href="#experiences">Expériences</a>
+                                <a class="nav-link" id="experience-tab" data-bs-toggle="pill" data-bs-target="#experience" role="tab" aria-controls="experience" aria-selected="true">Expérience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" onclick="showSection('contact')" href="#contact">Contact</a>
+                                <a class="nav-link" id="contact-tab" data-bs-toggle="pill" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="true">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -138,22 +125,27 @@
         </header>        
 
         <!-- Main Content -->
-        <main class="container-fluid flex-grow-1">
-            <section id="home" class="active">
+        <main class="container-fluid flex-grow-1 tab-content" id="tabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <h2 class="border-bottom pb-2">Bienvenue</h2>
-                <p>
-                    Bienvenue sur mon site CV ! Ce site a été conçu pour vous donner un aperçu complet de mon parcours, de mes compétences et de ce qui me motive. Vous y découvrirez des informations détaillées sur mon parcours académique, mes projets personnels et professionnels, ainsi que les expériences qui ont façonné mon savoir-faire et ma vision. Chaque section est là pour vous aider à mieux comprendre mes compétences, mes centres d'intérêt et les défis que j'aime relever. N'hésitez pas à explorer les différentes rubriques en cliquant sur les onglets en haut de la page pour en savoir plus !
-                </p>
-            </section>
+                <div class="hstack gap-3 align-items-start">
+                    <div class="p-2">
+                        <img src="Image1.png" class="w-100" alt="Ma photo">
+                    </div>
+                    <div class="p-2">
+                        Bienvenue sur mon portefolio en ligne ! Ce site a été conçu pour vous donner un aperçu complet de mon parcours, de mes compétences et de ce qui me motive. Vous y découvrirez des informations détaillées sur mon parcours académique, mes projets personnels et professionnels, ainsi que les expériences qui ont façonné mon savoir-faire et ma vision. Chaque section est là pour vous aider à mieux comprendre mes compétences, mes centres d'intérêt et les défis que j'aime relever.
+                    </div>
+                </div>
+            </div>
 
-            <section id="about-me" class="">
+            <div class="tab-pane fade" id="about-me" role="tabpanel" aria-labelledby="about-me-tab" tabindex="1">
                 <h2 class="border-bottom pb-2">À propos de moi</h2>
                 <p>
                     Je suis en troisième année de licence d'informatique, avec une passion pour tout ce qui touche aux technologies numériques et à la création de solutions modernes. J'ai le permis B et le permis AM, ce qui me donne pas mal de liberté pour bouger. À côté des études, je suis curieux et touche-à-tout : ça fait 9 ans que je joue de la guitare, ce qui m'a vraiment aidé à bosser ma créativité et ma persévérance. J'adore aussi l'histoire et la culture générale, des sujets qui me poussent à toujours vouloir apprendre de nouvelles choses.<br>Je m'intéresse à la CAO (conception assistée par ordinateur), un mélange sympa entre technique et imagination, et au développement frontend, où je trouve cool de combiner esthétique et utilité. Mon but ultime, c'est de devenir développeur full-stack et de vraiment maîtriser tous les aspects du métier de développeur.
                 </p>
-            </section>
+            </div>
 
-            <section id="education" class="">
+            <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab" tabindex="2">
                 <h2 class="border-bottom pb-2">Éducation</h2>
                 <div class="row row-cols-1 row-cols-md-2 g-3">
                     <div class="col-md-6">
@@ -176,9 +168,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="projects" class="">
+            <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab" tabindex="3">
                 <h2 class="border-bottom pb-2">Projets</h2>
                 <div class="row row-cols-1 row-cols-md-2 g-3">
                     <div class="col">
@@ -278,12 +270,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="experiences" class="">
+            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab" tabindex="4">
                 <h2 class="border-bottom pb-2">Expériences</h2>
                 <ul class="list-group">
-                    <!-- Item 1 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -292,7 +283,6 @@
                             <small class="text-secondary">13/05/2024 - 28/08/2024</small>
                         </div>
                     </li>
-                    <!-- Item 2 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -301,7 +291,6 @@
                             <small class="text-secondary">27/06/2023 - aujourd'hui</small>
                         </div>
                     </li>
-                    <!-- Item 3 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -310,7 +299,6 @@
                             <small class="text-secondary">27/06/2022 - 09/09/2022</small>
                         </div>
                     </li>
-                    <!-- Item 4 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -319,7 +307,6 @@
                             <small class="text-secondary">28/10/2020 - 30/01/2021</small>
                         </div>
                     </li>
-                    <!-- Item 5 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -328,7 +315,6 @@
                             <small class="text-secondary">Été 2017, 2018, 2019, 2021</small>
                         </div>
                     </li>
-                    <!-- Item 6 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -337,7 +323,6 @@
                             <small class="text-secondary">31/08/2020 - 13/09/2021</small>
                         </div>
                     </li>
-                    <!-- Item 7 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -346,7 +331,6 @@
                             <small class="text-secondary">Janvier 2016</small>
                         </div>
                     </li>
-                    <!-- Item 8 -->
                     <li class="list-group-item d-flex justify-content-between align-items-start bg-dark text-white shadow-sm">
                         <div class="ms-2 me-auto">
                             <div class="fw-bold">
@@ -356,9 +340,9 @@
                         </div>
                     </li>
                 </ul>
-            </section>
+            </div>
 
-            <section id="contact" class="">
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" tabindex="5">
                 <h2 class="border-bottom pb-2">Contact</h2>
                 <div class="container-fluid">
                     <div class="card profile-card bg-dark text-white">
@@ -376,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!-- Footer -->
@@ -388,22 +372,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script>
-        function showSection(id) {
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(id).classList.add('active');
-        }
-
-        // Vérifie le hash dans l'URL et affiche la section correspondante
-        document.addEventListener('DOMContentLoaded', () => {
-            const hash = window.location.hash; // Récupère la partie hash de l'URL
-            const sectionId = hash ? hash.substring(1) : null; // Supprime le "#" pour obtenir l'ID
-            if (sectionId) {
-                showSection(sectionId);
-            }
-        });
-    </script>
 </body>
 </html>
