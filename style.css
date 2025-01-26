@@ -50,11 +50,6 @@ a{
     height: 150px;
 }
 
-.profile-card {
-    max-width: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .profile-img {
     width: 170px;
     height: 170px;
