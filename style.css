@@ -41,10 +41,10 @@ a{
 }
 
 .accordion{
-    --bs-accordion-bg: rgba(20, 20, 20, 0.5);
-    --bs-accordion-btn-bg: rgba(40, 40, 40, 0.65);
-    --bs-accordion-active-color: #6ea8fe83;
-    --bs-accordion-active-bg: #03163383;
+    --bs-accordion-bg: rgba(20, 20, 20, 0.5)!important;
+    --bs-accordion-btn-bg: rgba(40, 40, 40, 0.65)!important;
+    --bs-accordion-active-color: #6ea8fe83!important;
+    --bs-accordion-active-bg: #03163383!important;
 }
 
 /* Präsentationen */
