@@ -51,7 +51,7 @@ a{
 }
 
 .profile-card{
-    min-width: 200px;
+    min-width: 210px!important;
 }
 
 .profile-img {
