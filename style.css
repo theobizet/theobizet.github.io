@@ -106,7 +106,7 @@ a{
     stroke: #ffffff!important;
     stroke-dasharray: 440!important;
     /*stroke-dashoffset: 440!important;*/
-    transition: stroke-dashoffset 1s ease-out!important;
+    transition: stroke-dashoffset 1.5s ease-in!important;
 }
 
 .skill-text {

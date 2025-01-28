@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const circumference = radius * 2 * Math.PI;
         const offset = circumference - (percent / 100) * circumference;
         circle.style.strokeDashoffset = offset;
-        let count = 0;
+        let count = 100;
         const timer = setInterval(() => {
-            if (count >= percent) {
+            if (count <= percent) {
                 clearInterval(timer);
             } else {
-                count++;
+                count--;
                 percentText.textContent = count + '%';
             }
-        }, 15);
+        }, percent);
     };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
