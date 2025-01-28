@@ -1,3 +1,5 @@
+"use strict"
+
 document.addEventListener('DOMContentLoaded', () => {
     const skills = document.querySelectorAll('.skill-item');
     const animateSkill = (skill) => {
