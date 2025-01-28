@@ -70,4 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
             tab.show();
         }
     }
+    else{
+        const tabTrigger = document.querySelector(`.nav-link[href="#home"]`);
+        if (tabTrigger) {
+            const tab = new bootstrap.Tab(tabTrigger);
+            tab.show();
+        }
+    }
 });
