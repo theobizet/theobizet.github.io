@@ -1,6 +1,3 @@
-Bien sûr ! Voici un exemple de fichier README en Markdown pour votre projet de CV en ligne. Ce fichier README inclut une description du projet, des instructions pour l'utiliser, et des informations sur les technologies utilisées.
-
-```markdown
 # CV en Ligne de Théo Bizet
 
 Bienvenue sur le projet de CV en ligne de Théo Bizet. Ce projet est une version HTML de mon CV, conçue pour être facilement accessible et lisible en ligne.
