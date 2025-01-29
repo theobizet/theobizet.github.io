@@ -1,16 +1,13 @@
 # Mon CV en ligne
 
-Bienvenue sur mon projet de CV en ligne ! Ce projet est une version HTML de mon CV, conçue pour être facilement accessible et lisible en ligne.
-
-## À propos de moi
-
-Je suis étudiant en 3e année de licence d'informatique. Je possède le permis B et le permis AM. J'aime la musique (9 ans d'apprentissage de la guitare), l'histoire, la culture générale, la conception assistée par ordinateur (CAO), le développement frontend de logiciels et la programmation web.
+Bienvenue sur mon projet de CV en ligne ! Ce projet est une version HTML de mon CV, conçue pour être facilement accessible et lisible en ligne et montrer mes compétences en développement web.
 
 ## Technologies utilisées
 
 - HTML5
 - CSS
-- Markdown
+- Bootstrap
+- JavaScript
 
 ## Structure du projet
 
