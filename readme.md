@@ -20,7 +20,16 @@ Le projet est structuré de la manière suivante :
 /cv-en-ligne
 │
 ├── index.html
-├── style.css
+├── assets/
+│   ├──(images)
+│   ├──style.css
+│   ├──script.js
+├── fr/
+│   ├──index.html
+├── en/
+│   ├──index.html
+├── de/
+│   ├──index.html
 ├── README.md
 ```
 
