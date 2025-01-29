@@ -63,7 +63,3 @@ Ce projet n'est sous  aucune licence.
 ## Auteur
 
 Théo Bizet - [LinkedIn](https://www.linkedin.com/in/théo-bizet)
-
----
-
-N'hésitez pas à contribuer à ce projet en ouvrant une issue ou en proposant une pull request. Merci de votre intérêt !
