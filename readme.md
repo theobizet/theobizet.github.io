@@ -20,6 +20,7 @@ Le projet est structuré de la manière suivante :
 /cv-en-ligne
 │
 ├── index.html
+├── 404.html
 ├── assets/
 │   ├──(images)
 │   ├──style.css
