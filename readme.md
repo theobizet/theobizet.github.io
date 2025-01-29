@@ -38,7 +38,7 @@ Le projet est structuré de la manière suivante :
 
 1. **Cloner le dépôt** :
    ```bash
-   git clone https://github.com/votre-utilisateur/cv-en-ligne.git
+   git clone https://github.com/theobizet/theobizet.github.io
    ```
 
 2. **Ouvrir le fichier `index.html`** dans votre navigateur web préféré.
