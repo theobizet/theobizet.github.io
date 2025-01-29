@@ -1,6 +1,6 @@
-# CV en Ligne de Théo Bizet
+# Mon CV en ligne
 
-Bienvenue sur le projet de CV en ligne de Théo Bizet. Ce projet est une version HTML de mon CV, conçue pour être facilement accessible et lisible en ligne.
+Bienvenue sur mon projet de CV en ligne ! Ce projet est une version HTML de mon CV, conçue pour être facilement accessible et lisible en ligne.
 
 ## À propos de moi
 
