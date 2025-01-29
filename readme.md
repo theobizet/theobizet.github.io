@@ -72,4 +72,4 @@ Ce projet n'est sous  aucune licence.
 
 ## Auteur
 
-Théo Bizet - [LinkedIn](https://www.linkedin.com/in/théo-bizet)
+Théo Bizet
