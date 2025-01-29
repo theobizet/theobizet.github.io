@@ -60,12 +60,6 @@ Le CV contient les sections suivantes :
 
 ![Capture d'écran du CV](/assets/capture.png)
 
-## Contact
-
-- Email : [theobizet@outlook.fr](mailto:theobizet@outlook.fr)
-- Téléphone : 06 03 70 47 01
-- LinkedIn : [linkedin.com/in/théo-bizet](https://www.linkedin.com/in/théo-bizet)
-
 ## Licence
 
 Ce projet n'est sous  aucune licence.
