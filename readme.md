@@ -45,12 +45,12 @@ Le projet est structuré de la manière suivante :
 Le CV contient les sections suivantes :
 
 - À propos de moi
+   - Langues
+   - Compétences
 - Éducation
 - Projets
 - Expériences
 - Contact
-- Langues
-- Compétences
 - Qualités
 
 ## Capture d'écran
