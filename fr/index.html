@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Théo Bizet</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body class="">
+    <div class="content-wrapper">
+        <!-- Header -->
+        <header class="bg-dark">
+            <!-- Navbar avec bouton hamburger pour les petits écrans -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <!-- Logo / Titre -->
+                    <span class="fw-bolder navbar-brand px-3 fs-1">Théo BIZET - Développeur</span>
+                    <!-- Bouton hamburger pour mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menu déroulant qui se cache sur les petits écrans -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav" id="tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="px-3 fs-4 nav-link" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true" href="#home">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-3 fs-4 nav-link" id="about-me-tab" data-bs-toggle="pill" data-bs-target="#about-me" role="tab" aria-controls="about-me" aria-selected="true" href="#about-me">À propos de moi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-3 fs-4 nav-link" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" role="tab" aria-controls="education" aria-selected="true" href="#education">Éducation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-3 fs-4 nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" role="tab" aria-controls="projects" aria-selected="true" href="#projects">Projets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-3 fs-4 nav-link" id="experience-tab" data-bs-toggle="pill" data-bs-target="#experience" role="tab" aria-controls="experience" aria-selected="true" href="#experience">Expérience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-3 fs-4 nav-link" id="contact-tab" data-bs-toggle="pill" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="true" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle px-3 fs-4" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="true">
+                                        Langue
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="/en/index.html">English 🇬🇧</a></li>
+                                        <li><a class="dropdown-item" href="/de/index.html">Deutsch 🇩🇪</a></li>
+                                        <li><a class="dropdown-item" href="/fr/index.html">Français 🇫🇷</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </nav>
+        </header>        
+
+        <!-- Main Content -->
+        <main class="container-fluid flex-grow-1 tab-content" id="tabContent">
+            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <h2 class="border-bottom pb-2">Bienvenue</h2>
+                <div class="container-fluid">
+                    <p>
+                        Bienvenue sur mon portefolio en ligne ! Ce site a été conçu pour vous donner un aperçu complet de mon parcours, de mes compétences ainsi que de ce qui me motive. Vous y découvrirez des informations détaillées sur mon parcours académique, mes projets personnels et professionnels, ainsi que les expériences qui ont façonné mon savoir-faire et ma vision. Chaque section est là pour vous aider à mieux comprendre mes compétences, mes centres d'intérêts et les défis que j'aime relever.
+                    </p>
+                </div>
+                <div class="row g-3 justify-content-evenly">
+                    <div class="col-auto">
+                        <div class="card h-100 bg-dark bg-opacity-50" style="width:18rem;">
+                            <img src="/assets/Image1.png" class="card-img h-100 bg-light-subtle" style="object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">À propos de moi</h5>
+                                <p class="card-text">Dans cette partie, je me présente, moi , mes compétences ainsi que mes points forts.</p>
+                                <a class="btn btn-primary stretched-link" href="#about-me">Voir l'onglet</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-auto">
+                        <div class="card h-100 bg-dark bg-opacity-50" style="width:18rem;">
+                            <img src="/assets/education.jpg" class="card-img h-100" style="object-fit: cover;">
+                            <!--Image par Gerd Altmann de Pixabay-->
+                            <div class="card-body">
+                                <h5 class="card-title">Éducation</h5>
+                                <p class="card-text">Dans cette partie, je me présente mon parcours scolaire et les écoles que j'ai fréquenté.</p>
+                                <a class="btn btn-primary stretched-link" href="#education">Voir l'onglet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card h-100 bg-dark bg-opacity-50" style="width:18rem;">
+                            <img src="/assets/projet.jpg" class="card-img h-100" style="object-fit: cover;">
+                            <!--Image par Gerd Altmann de Pixabay-->
+                            <div class="card-body">
+                                <h5 class="card-title">Projets</h5>
+                                <p class="card-text">Dans cette partie, je me présente tout les projets que j'ai pu faire durant mon parcours.</p>
+                                <a class="btn btn-primary stretched-link" href="#projects">Voir l'onglet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card h-100 bg-dark bg-opacity-50" style="width:18rem;">
+                            <img src="/assets/experience.jpg" class="card-img h-100" style="object-fit: cover;">
+                            <!--Image par Gerd Altmann de Pixabay-->
+                            <div class="card-body">
+                                <h5 class="card-title">Expérience</h5>
+                                <p class="card-text">Dans cette partie, je me présente mon expérience professionnel et mes différents postes précédents.</p>
+                                <a class="btn btn-primary stretched-link" href="#experience">Voir l'onglet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card h-100 bg-dark bg-opacity-50" style="width:18rem;">
+                            <img src="/assets/contact.jpg" class="card-img h-100" style="object-fit: cover;">
+                            <!--Image par Gerd Altmann de Pixabay-->
+                            <div class="card-body">
+                                <h5 class="card-title">Contact</h5>
+                                <p class="card-text">C'est ici que retrouverez comment me contacter et vous pourrez même m'envoyer un message !</p>
+                                <a class="btn btn-primary stretched-link" href="#contact">Voir l'onglet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="about-me" role="tabpanel" aria-labelledby="about-me-tab" tabindex="1">
+                <h2 class="border-bottom pb-2">À propos de moi</h2>
+                <div class="container-fluid">
+                    <p>
+                        <img src="/assets/Image1.png" class="me-3 bg-white bg-opacity-10 border border-dark rounded float-start" width="150" alt="My photo">
+                        Je suis en troisième année de licence en informatique, avec une passion marquée pour les technologies numériques et la création de solutions innovantes. Titulaire des permis B et AM, je dispose d'une bonne mobilité pour m'adapter à diverses opportunités. En parallèle de mes études, je suis curieux et polyvalent : j'ai pratiqué la guitare pendant neuf ans, une activité qui a renforcé ma créativité, ma discipline et ma persévérance.
+                        <br>
+                        J'ai également un intérêt prononcé pour l'histoire et la culture générale, des domaines qui alimentent ma soif d'apprentissage. Je m'intéresse particulièrement à la conception assistée par ordinateur (CAO), un domaine où la technique rencontre l'imagination, ainsi qu'au développement frontend, où l'esthétique et l'utilité se combinent harmonieusement. Mon ambition est de devenir développeur full-stack, afin de maîtriser pleinement les multiples aspects du métier et de contribuer à des projets technologiques modernes et impactants.
+                        <br>
+                        En tant que développeur polyvalent, j'ai acquis une solide expertise dans plusieurs langages de programmation, notamment C++, Java, JavaScript, Python, PHP, HTML & CSS, ainsi que SQL. Mon environnement de développement inclut principalement des outils comme QT pour les interfaces utilisateur, Laravel pour le développement web, et Microsoft SSMS pour la gestion des bases de données. En complément de mes compétences techniques, je possède également des connaissances en comptabilité et en gestion de projet, ce qui me permet de comprendre et de répondre efficacement aux besoins opérationnels et financiers des projets sur lesquels je travaille. Cette combinaison de compétences techniques et de gestion me permet de contribuer de manière significative à des projets variés, allant du développement logiciel à la gestion de projets complexes.
+                    </p>
+                </div>
+                <h2 class="border-bottom pb-2">Mes compétences</h2>
+                <div class="pt-2 row justify-content-center g-2">
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="C++" data-percent="95">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">C++</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="HTML&CSS" data-percent="90">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">HTML & CSS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="JavaScript" data-percent="75">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="SQL" data-percent="90">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">SQL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="Python" data-percent="80">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">Python</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="Java" data-percent="80">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">Java</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="PHP" data-percent="80">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">PHP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="skill-item mx-auto animated" data-skill="Laravel" data-percent="85">
+                            <svg class="skill-circle">
+                                <circle class="bg" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="skill-text">
+                                <div class="skill-name">Laravel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="border-bottom pb-2">D'autres points forts</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h5>Gestion de projets</h5>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h5>Notions de comptabilité</h5>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="border-bottom pb-2">Langues</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h5>Anglais</h5>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">Certification : CLES</small>
+                            <br>
+                            <small class="text-muted">Niveau : B2</small>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h5>Allemand</h5>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-muted">Certification : Goethe-test pro</small>
+                            <br>
+                            <small class="text-muted">Niveau : A2</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab" tabindex="2">
+                <h2 class="border-bottom pb-2">Éducation</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col-md-6">
+                        <div class="card bg-dark text-light ">
+                            <div class="card-body">
+                                <div class="h5">Université de Haute Alsace - Mulhouse</div>
+                                <p class="text-secondary">2019 - aujourd'hui : LICENCE INFORMATIQUE</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/Logo-Uha-blanc.png');">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-dark text-light ">
+                            <div class="card-body">
+                                <div class="h5">Lycée Général Don Bosco - Landser</div>
+                                <p class="text-secondary">2016 - 2019 : BACCALAURÉAT SCIENCE DE L'INGÉNIEUR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab" tabindex="3">
+                <h2 class="border-bottom pb-2">Projets</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="card h-100 bg-dark text-light">
+                            <div class="card-header bg-dark text-white">
+                                2024-2025
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Création d'un robot résolvant des labyrinthes</h5>
+                                <p class="card-text">Rôle : Chef de projet</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/labyrinthe.jpg');">
+                            </div>
+                        </div>                                            
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-dark text-light">
+                            <div class="card-header bg-dark text-white">
+                                2023-2024
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mise en place du logiciel EFA cloud pour Mulhouse-Aviron</h5>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/aviron.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-dark text-light">
+                            <div class="card-header bg-dark text-white">
+                                2023-2024
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Présentation de MobileNet-SSD (Intelligence artificielle)</h5>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/mobilenetSSD.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-dark text-light">
+                            <div class="card-header bg-dark text-white">
+                                2022-2023
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Gestionnaire de rendez-vous avec C++ et QT</h5>
+                                <p class="card-text">Rôle : Développeur</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/gestionRDV.png');">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-dark text-light">
+                            <div class="card-header bg-dark text-white">
+                                2021-2022
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Base de données avec Microsoft Access : Gestion des vacataires de l'UHA</h5>
+                                <p class="card-text">Rôle : Chef de projet</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/BDDrelationnelle.jpeg');">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-dark text-light">
+                            <div class="card-header bg-dark text-white">
+                                2018-2019
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Module pour motoriser un skateboard</h5>
+                                <p class="card-text">Rôle : Développeur</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/skate.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-dark text-light">
+                            <div class="card-header bg-dark text-white">
+                                2016-2017
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jeu vidéo « Pong » en Python</h5>
+                                <p class="card-text">Rôle : Développeur</p>
+                            </div>
+                            <div class="card-footer bg-image" 
+                                style="background-image: url('/assets/pong.png');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab" tabindex="4">
+                <h2 class="border-bottom pb-2">Expériences</h2>
+                <div class="accordion" id="accordionExperience">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseISL" aria-expanded="false" aria-controls="collapseISL">
+                                <i class="fas fa-briefcase text-primary me-2"></i>Stage de fin de licence - ISL, Saint-Louis<span class="text-secondary">(13/05/2024 - 28/08/2024)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseISL" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                <strong>Amélioration de la comptabilité analyitque de l'institue : </strong>Extraction sécurisée de données concernant le système d'information des ressources humaines aux fins de leur mise à disposition au personnel concerné en fonction de leur appartenance à un groupe précis de personnes.
+                                <br>
+                                <br>
+                                <strong>Compétences : Bases de données · Comptabilité analytique</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCERP" aria-expanded="false" aria-controls="collapseCERP">
+                                <i class="fas fa-warehouse text-success me-2"></i>Préparateur de commandes - CERP RRM, Illzach<span class="text-secondary">(27/06/2023 - aujourd'hui)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseCERP" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                Préparation de commande de médicaments et de matériel médical pour les pharmacies au alentours de Mulhouse.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGRG-DB" aria-expanded="false" aria-controls="collapseGRG-DB">
+                                <i class="fas fa-database text-info me-2"></i>Transfert de base de données - GRG Alsace, Strasbourg<span class="text-secondary">(27/06/2022 - 09/09/2022)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseGRG-DB" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                Inventaires, chargement et déchargement de camions + Mission d'aide à la migration du système informatique de l'entreprise depuis une base de données Microsoft Access au logiciel WSM Akanéa.
+                                <br>
+                                <br>
+                                <strong>Compétences : Administration de bases de données</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBell" aria-expanded="false" aria-controls="collapseBell">
+                                <i class="fas fa-boxes text-warning me-2"></i>Préparateur de commandes - Bell Suisse SA, Bâle<span class="text-secondary">(28/10/2020 - 30/01/2021)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseBell" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                Préparation de commandes de poissonnerie pour les supermarchés COOP.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGRG" aria-expanded="false" aria-controls="collapseGRG">
+                                <i class="fas fa-truck-loading text-secondary me-2"></i>Manutentionnaire - GRG Alsace, Strasbourg<span class="text-secondary">(Été 2017, 2018, 2019, 2021)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseGRG" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                Inventaires, chargement et déchargement de camions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMatch" aria-expanded="false" aria-controls="collapseMatch">
+                                <i class="fas fa-store text-danger me-2"></i>Vendeur - Supermarché Match, Huningue<span class="text-secondary">(31/08/2020 - 13/09/2021)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseMatch" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                Responsable du réapprovisionnement et du bon entretien du rayon fruits et légumes.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlsace" aria-expanded="false" aria-controls="collapseAlsace">
+                                <i class="fas fa-laptop-code text-primary me-2"></i>Stage d'observation : Service Informatique - Journal l'Alsace, Mulhouse<span class="text-secondary">(Janvier 2016)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseAlsace" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                Ce stage d'observation m'a permis de voir le travail de maintenance des informaticiens du journal L'Alsace.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFix" aria-expanded="false" aria-controls="collapseFix">
+                                <i class="fas fa-seedling text-success me-2"></i>Ouvrier agricole - EARL Fix, Fessenheim-le-Bas<span class="text-secondary">(Été 2015)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFix" class="accordion-collapse collapse" data-bs-parent="#accordionExperience">
+                            <div class="accordion-body">
+                                Tri du tabac pour une petite exploitation agricole.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" tabindex="5">
+                <h2 class="border-bottom pb-2">Contact</h2>
+                <div class="row row-cols-1 row-cols-lg-2 g-2">
+                    <div class="col col-lg-2 profile-card">
+                        <div class="card bg-dark text-white ">
+                            <div class="card-body text-left">
+                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQFRLJOPMFdP2A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700769788575?e=1743033600&v=beta&t=vPKPXtUQqK65CrVMuD49N3YVtfCW9_NZXZ9QeWXEGd8" alt="User Profile" class="border rounded-4 border-4 profile-img mb-3">
+                                <h3 class="card-title mb-2">Théo BIZET</h3>
+                                <p class="crad-text text-secondary mb-3">Étudiant en informatique</p>
+                                <p class="card-text mb-4">Passionné de création digitale et numérique et de solutions logicielles ou web</p>
+                                <p class="card-text mb-3"><i class="fa fa-envelope" aria-hidden="true"></i> Email : <a href="mailto:theobizet@outlook.fr" class="text-white">theobizet@outlook.fr</a></p>
+                                <p class="card-text mb-3"><i class="fa fa-phone" aria-hidden="true"></i> Téléphone : <a href="tel:+33603704701" class="text-white">+33 6 03 70 47 01</a></p>
+                                <div class="social-icons mb-4">
+                                    <a href="https://www.linkedin.com/in/théo-bizet" target="_blank" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://github.com/theobizet" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-10">
+                        <div class="card bg-dark ">
+                            <div class="card-header">
+                                <h2 class="pb-2">Envoyez-moi un message!</h2>
+                            </div>
+                            <div class="card-body">
+                                <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+                                    <!-- Replace with your StaticForms accessKey -->
+                                    <input type="hidden" name="accessKey" value="84929462-7e63-47b4-9b5f-84cdb1e5cba9">
+                                    <input type="hidden" name="subject" value="Contact depuis mon site">
+                                    <div class="mb-3">
+                                        <label class="form-label">Nom</label>
+                                        <div class="control">
+                                            <input class="form-control" type="text" name="name" placeholder="Entrez votre nom" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Adresse mail</label>
+                                        <div class="control">
+                                            <input class="form-control" type="email" name="email" placeholder="Entrez votre adresse mail" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Message</label>
+                                        <div class="control">
+                                            <textarea class="form-control" name="message" placeholder="Écrivez votre message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" type="Submit">Envoyer <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                                    <input type="hidden" name="redirectTo" value="https://theobizet.github.io/fr/index.html">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center pt-2">
+            <p>Théo Bizet - 2025</p>
+            <p class="text-secondary">Hosted by <a class="text-secondary" href="https://github.com">GitHub<i class="fab fa-github"></i></a></p>
+        </footer>
+    </div>
+
+    <script src="/assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
