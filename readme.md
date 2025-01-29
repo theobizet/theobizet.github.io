@@ -48,7 +48,7 @@ Le CV contient les sections suivantes :
 
 ## Capture d'écran
 
-![Capture d'écran du CV](https://via.placeholder.com/800x600)
+![Capture d'écran du CV](/assets/capture.png)
 
 ## Contact
 
@@ -58,7 +58,7 @@ Le CV contient les sections suivantes :
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet n'est sous  aucune licence.
 
 ## Auteur
 
