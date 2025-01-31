@@ -34,6 +34,15 @@ a{
     border: none!important;
 }
 
+#home .card {
+    min-width: 300px!important;
+    height: 700px!important;
+}
+#home .card img {
+    height: 500px!important;
+    object-fit: cover!important;
+}
+
 .card{
     --bs-bg-opacity: .5!important;
 }
