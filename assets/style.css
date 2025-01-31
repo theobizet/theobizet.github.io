@@ -43,6 +43,15 @@ a{
     object-fit: cover!important;
 }
 
+#contact .card {
+    height: 570px!important;
+}
+
+#contact textarea[name="message"] {
+    height:200px;
+    resize:none;
+}
+
 .card{
     --bs-bg-opacity: .5!important;
 }
