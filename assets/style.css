@@ -44,11 +44,11 @@ a{
 }
 
 #contact .card {
-    height: 600px!important;
+    height: 620px!important;
 }
 
 #contact textarea[name="message"] {
-    height:230px;
+    height:250px;
     resize:none;
 }
 
