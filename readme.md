@@ -29,10 +29,10 @@ Qualités
 Capture d'écran
 ```
 
-Licence
+## Licence
 
 Ce projet n'est sous aucune licence.
 
-Auteur
+## Auteur
 
 Théo Bizet
