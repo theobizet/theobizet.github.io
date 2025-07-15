@@ -1,66 +1,38 @@
 # Mon CV en ligne
 
-Bienvenue sur mon projet de CV en ligne ! Ce projet est une version HTML de mon CV, conçue pour être facilement accessible et lisible en ligne et montrer mes compétences en développement web.
+Bienvenue sur mon projet de CV en ligne ! Ce projet est une version moderne de mon CV, conçue pour être facilement accessible et lisible en ligne, et pour montrer mes compétences en développement web avec Angular et TypeScript.
 
 ## Technologies utilisées
-
-- HTML5
-- CSS
-- Bootstrap
-- JavaScript
-
-## Structure du projet
-
-Le projet est structuré de la manière suivante :
-
 ```
-/cv-en-ligne
-│
-├── index.html
-├── 404.html
-├── assets/
-│   ├──(images)
-│   ├──style.css
-│   ├──script.js
-├── fr/
-│   ├──index.html
-├── en/
-│   ├──index.html
-├── de/
-│   ├──index.html
-├── README.md
+Angular
+TypeScript
+HTML5
+CSS
+Bootstrap
+JavaScript
+Structure du projet
 ```
-
-## Comment utiliser
-
-1. **Cloner le dépôt** :
-   ```bash
-   git clone https://github.com/theobizet/theobizet.github.io
-   ```
-
-2. **Ouvrir le fichier `index.html`** dans votre navigateur web préféré.
 
 ## Contenu du CV
 
 Le CV contient les sections suivantes :
 
-- À propos de moi
-   - Langues
-   - Compétences
-- Éducation
-- Projets
-- Expériences
-- Contact
-- Qualités
+```
+À propos de moi
+Langues
+Compétences
+Éducation
+Projets
+Expériences
+Contact
+Qualités
+Capture d'écran
+```
 
-## Capture d'écran
+Licence
 
-![Capture d'écran du CV](/assets/capture.png)
+Ce projet n'est sous aucune licence.
 
-## Licence
-
-Ce projet n'est sous  aucune licence.
-
-## Auteur
+Auteur
 
 Théo Bizet
